@@ -12,18 +12,18 @@
 
 /* Стилизация шрифтов и базовых элементов */
 @layer base {
-  html {
-    font-family: 'Inter', sans-serif;
+  html, body {
+    font-family: 'Playfair Display', serif !important;
     background: #fff;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif !important;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
   body {
     color: #232323;
-    background-color: transparent; /* new: убираем override градиентного фона */
+    background-color: transparent;
     font-size: 1.125rem;
   }
   ::selection {
@@ -32,6 +32,7 @@
   }
   a {
     transition: color 0.2s;
+    font-family: 'Playfair Display', serif !important;
   }
 }
 
@@ -43,6 +44,7 @@
 /* Золотой акцент для кнопок */
 .gold-btn {
   @apply bg-accentGold text-white font-semibold py-3 px-7 rounded-full shadow-lg hover:bg-[#ffd473] hover:text-[#231f20] hover:scale-105 transition-all duration-300;
+  font-family: 'Playfair Display', serif !important;
 }
 
 /* Анимация "сияния" для золотой линии */

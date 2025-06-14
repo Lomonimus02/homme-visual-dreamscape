@@ -1,9 +1,10 @@
+
 const Hero = () => (
   <section className="relative flex flex-col items-center justify-center min-h-[70vh] py-16 px-2 md:px-0 section-fade">
     <div className="absolute inset-0 -z-10">
       <img
-        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80"
-        alt="Яркий современный интерьер"
+        src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=1400&q=80"
+        alt="Фрагмент современного интерьера"
         className="object-cover w-full h-full rounded-b-3xl shadow-lg filter brightness-95 saturate-150"
         loading="lazy"
       />
