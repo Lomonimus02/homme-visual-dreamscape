@@ -9,8 +9,11 @@ const CTA = () => (
     <p className="max-w-2xl text-xl md:text-2xl mb-9 text-[#5B5B5B]">
       Свяжитесь с нами и получите первую консультацию бесплатно. Давайте вместе создадим пространство вашей мечты!
     </p>
-    <ConsultFormDialog />
-    <div className="flex flex-col gap-1 items-center mt-7 text-base md:text-lg text-[#5b5b5b]">
+    <div className="w-full flex justify-center">
+      {/* Добавляем явное выравнивание текста внутри кнопки */}
+      <ConsultFormDialog />
+    </div>
+    <div className="flex flex-col md:flex-row gap-1 md:gap-8 items-center mt-7 text-base md:text-lg text-[#5b5b5b]">
       <span>
         Телефон:&nbsp;
         <a
@@ -20,6 +23,7 @@ const CTA = () => (
           +7&nbsp;926&nbsp;222-55-44
         </a>
       </span>
+      <span className="hidden md:inline-block text-[#b0a485] select-none">|</span>
       <span>
         Email:&nbsp;
         <a
