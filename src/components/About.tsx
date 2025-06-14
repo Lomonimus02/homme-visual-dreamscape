@@ -1,6 +1,6 @@
 
 const About = () => (
-  <section className="section-fade w-full max-w-6xl mx-auto py-14 md:py-24 px-3 sm:px-6 flex flex-col items-center" id="about">
+  <section className="section-fade w-full max-w-6xl mx-auto py-7 md:py-12 px-3 sm:px-6 flex flex-col items-center" id="about">
     <h2 className="text-4xl sm:text-5xl md:text-6xl font-playfair mb-8 text-center">
       О нашем агентстве
     </h2>
@@ -13,3 +13,4 @@ const About = () => (
 );
 
 export default About;
+
