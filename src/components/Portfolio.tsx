@@ -23,23 +23,27 @@ const images = [
 ];
 
 const Portfolio = () => (
-  <section className="section-fade w-full max-w-6xl mx-auto py-16 md:py-20 px-4" id="portfolio">
-    <h2 className="text-4xl md:text-5xl font-playfair mb-10 text-center">Портфолио</h2>
-    <div className="grid gap-8 md:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+  <section className="section-fade w-full max-w-7xl mx-auto py-14 md:py-24 px-3 sm:px-6" id="portfolio">
+    <h2 className="text-4xl sm:text-5xl md:text-6xl font-playfair mb-12 text-center">
+      Портфолио
+    </h2>
+    <div className="grid gap-8 md:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
       {images.map((img) => (
         <div
-          className="card-elevated flex flex-col overflow-hidden transition-all group cursor-pointer"
+          className="card-elevated flex flex-col overflow-hidden transition-all group cursor-pointer min-h-[330px]"
           key={img.src}
         >
-          <div className="relative w-full h-56 md:h-64 overflow-hidden">
+          <div className="relative w-full h-64 md:h-80 overflow-hidden">
             <img
               src={img.src}
               alt={img.alt}
               className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
             />
           </div>
-          <div className="p-5">
-            <p className="text-lg font-playfair text-[#231f20]">{img.desc}</p>
+          <div className="p-6 md:p-8 flex-1 flex items-center">
+            <p className="text-xl md:text-2xl font-playfair text-[#231f20] text-center w-full">
+              {img.desc}
+            </p>
           </div>
         </div>
       ))}

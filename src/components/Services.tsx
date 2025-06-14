@@ -28,14 +28,23 @@ const services = [
 ];
 
 const Services = () => (
-  <section className="section-fade w-full max-w-6xl mx-auto py-16 md:py-20 px-4" id="services">
-    <h2 className="text-4xl md:text-5xl font-playfair mb-10 text-center">Услуги</h2>
-    <div className="grid md:grid-cols-4 gap-8">
+  <section className="section-fade w-full max-w-7xl mx-auto py-14 md:py-24 px-3 sm:px-6" id="services">
+    <h2 className="text-4xl sm:text-5xl md:text-6xl font-playfair mb-12 text-center">
+      Услуги
+    </h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
       {services.map((srv) => (
-        <div key={srv.title} className="flex flex-col items-center card-elevated p-8">
-          <srv.icon size={42} className="text-accentGold mb-4" />
-          <h3 className="text-2xl font-playfair mb-2 text-center">{srv.title}</h3>
-          <p className="text-base text-[#5B5B5B] text-center">{srv.description}</p>
+        <div
+          key={srv.title}
+          className="flex flex-col items-center card-elevated p-8 md:p-10 lg:p-12 h-full min-h-[310px] transition-transform duration-300 hover:scale-105"
+        >
+          <srv.icon size={54} className="text-accentGold mb-6" />
+          <h3 className="text-2xl md:text-3xl font-playfair mb-3 text-center">
+            {srv.title}
+          </h3>
+          <p className="text-lg md:text-xl text-[#5B5B5B] text-center leading-normal">
+            {srv.description}
+          </p>
         </div>
       ))}
     </div>
