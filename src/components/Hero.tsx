@@ -22,6 +22,14 @@ const Hero = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleScrollToPortfolio = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const section = document.getElementById("portfolio");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative flex flex-col items-center justify-center min-h-[70vh] py-16 px-2 md:px-0 section-fade">
       <div className="absolute inset-0 -z-10">
@@ -39,7 +47,6 @@ const Hero = () => {
           className="text-6xl md:text-8xl font-playfair font-bold uppercase tracking-tight text-[#231f20] drop-shadow-md mb-3 md:mb-6 relative w-fit mx-auto"
         >
           homme
-          {/* Светящаяся золотая полоса ровно по ширине текста */}
           <span
             className="absolute left-1/2 -bottom-1 md:-bottom-2 h-3 md:h-4 pointer-events-none flex items-center justify-center"
             style={{
@@ -51,16 +58,18 @@ const Hero = () => {
             <span className="block w-full h-full rounded-full animate-homme-glow bg-[rgba(211,180,115,0.86)] blur-sm opacity-90"></span>
           </span>
         </h1>
-        <a
-          href="#portfolio"
+        <button
+          onClick={handleScrollToPortfolio}
           className="gold-btn text-xl md:text-2xl font-playfair shadow-xl animate-scale-in px-10 py-4"
           style={{ boxShadow: "0px 8px 40px 0px #d3b47350" }}
+          type="button"
         >
           Смотреть портфолио
-        </a>
+        </button>
       </div>
     </section>
   );
 };
 
 export default Hero;
+
