@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 
-// Новый фон: современная стильная гостиная
+// Новый фон: стильная современная спальня, отличная замена гостиной для главного экрана
 const HERO_BG =
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80";
-// Это просторная светлая гостиная, отлично подходит под тематику дизайн-студии
+  "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=1400&q=80";
+// Это уютная минималистичная спальня с обилием света
 
 const Hero = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
@@ -36,7 +36,7 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10">
         <img
           src={HERO_BG}
-          alt="Cовременная гостиная в светлых тонах"
+          alt="Современная спальня в светлых тонах"
           className="object-cover w-full h-full rounded-b-3xl shadow-lg filter brightness-95 saturate-150"
           loading="lazy"
         />
