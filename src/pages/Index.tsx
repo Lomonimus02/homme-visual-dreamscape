@@ -10,7 +10,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 export default function Index() {
   return (
-    <>
+    <div className="bg-main-gradient min-h-screen w-full flex flex-col">
       <Hero />
       <About />
       <Services />
@@ -18,6 +18,6 @@ export default function Index() {
       <CTA />
       <Footer />
       <Toaster />
-    </>
+    </div>
   );
 }
