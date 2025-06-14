@@ -1,8 +1,9 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
+// Новый фон: Можно выбрать, например, "photo-1470071459604-3b5ec3a7fe05" (туманная гора)
 const HERO_BG =
-  "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=1400&q=80";
+  "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80";
 
 const Hero = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
@@ -35,7 +36,7 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10">
         <img
           src={HERO_BG}
-          alt="Современная гостиная, интерьер"
+          alt="Туманная гора"
           className="object-cover w-full h-full rounded-b-3xl shadow-lg filter brightness-95 saturate-150"
           loading="lazy"
         />
@@ -72,4 +73,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

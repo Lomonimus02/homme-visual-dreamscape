@@ -28,7 +28,8 @@ const services = [
 ];
 
 const Services = () => (
-  <section className="section-fade w-full max-w-7xl mx-auto py-14 md:py-24 px-3 sm:px-6" id="services">
+  // Уменьшен нижний отступ (py-7 вместо py-14/md:py-24)
+  <section className="section-fade w-full max-w-7xl mx-auto py-7 md:py-12 px-3 sm:px-6" id="services">
     <h2 className="text-4xl sm:text-5xl md:text-6xl font-playfair mb-12 text-center">
       Услуги
     </h2>
