@@ -12,8 +12,8 @@ const Index = () => {
     <div className="w-full min-h-screen bg-main-gradient flex flex-col">
       <Hero />
       <About />
-      <Portfolio />
       <Services />
+      <Portfolio />
       <CTA />
       <Footer />
     </div>
@@ -21,3 +21,4 @@ const Index = () => {
 };
 
 export default Index;
+
