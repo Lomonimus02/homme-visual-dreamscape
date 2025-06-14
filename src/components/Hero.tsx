@@ -1,9 +1,10 @@
+
 import React, { useEffect, useRef, useState } from "react";
 
-// Новый фон: стильная современная спальня, отличная замена гостиной для главного экрана
+// Новый фон: реально красивая современная спальня, светлая и просторная
 const HERO_BG =
-  "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=1400&q=80";
-// Это уютная минималистичная спальня с обилием света
+  "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80";
+// На фото: большая светлая спальня с большими окнами и современной мебелью
 
 const Hero = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
@@ -73,3 +74,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
