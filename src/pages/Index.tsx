@@ -1,5 +1,4 @@
 
-// Главная страница — homme интерьерное агентство
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
@@ -9,7 +8,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="w-full min-h-screen bg-[#f8f8f6] flex flex-col">
+    // Красочный фон-градиент
+    <div className="w-full min-h-screen bg-main-gradient flex flex-col">
       <Hero />
       <About />
       <Portfolio />

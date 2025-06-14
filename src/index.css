@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Градиентный фон для всего сайта */
+@layer utilities {
+  .bg-main-gradient {
+    background: linear-gradient(120deg, #fff7da 0%, #ffe2ec 37%, #e7fbff 100%);
+  }
+}
+
 /* Стилизация шрифтов и базовых элементов */
 @layer base {
   html {
@@ -16,7 +23,7 @@
   }
   body {
     color: #232323;
-    background-color: #f8f8f6;
+    background-color: transparent; /* new: убираем override градиентного фона */
     font-size: 1.125rem;
   }
   ::selection {
@@ -35,7 +42,22 @@
 
 /* Золотой акцент для кнопок */
 .gold-btn {
-  @apply bg-accentGold text-white font-semibold py-3 px-7 rounded-full shadow-lg hover:opacity-90 hover:scale-105 transition-all duration-300;
+  @apply bg-accentGold text-white font-semibold py-3 px-7 rounded-full shadow-lg hover:bg-[#ffd473] hover:text-[#231f20] hover:scale-105 transition-all duration-300;
+}
+
+/* Анимация "сияния" для золотой линии */
+@keyframes gold-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px 3px #efd28a88, 0 0 5px 1px #d3b473;
+    filter: brightness(1.2) drop-shadow(0 0 15px #efd28a88);
+  }
+  50% {
+    box-shadow: 0 0 30px 8px #ffe99699, 0 0 10px 2px #e3b991cc;
+    filter: brightness(1.4) drop-shadow(0 0 25px #ffe99699);
+  }
+}
+.animate-gold-glow {
+  animation: gold-glow 2s ease-in-out infinite alternate;
 }
 
 /* Эффект появления */
