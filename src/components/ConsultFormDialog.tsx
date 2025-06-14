@@ -42,7 +42,7 @@ const ConsultFormDialog = () => {
       <DialogTrigger asChild>
         <Button
           size="lg"
-          className="gold-btn text-xl md:text-2xl font-playfair inline-flex items-center justify-center w-full max-w-xs shadow-xl px-10 py-4"
+          className="gold-btn text-xl md:text-2xl font-playfair inline-flex items-center justify-center w-full max-w-md shadow-xl px-12 py-5"
           style={{ boxShadow: "0px 8px 40px 0px #d3b47350" }}
         >
           <span className="w-full flex justify-center items-center">
